@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Flogaster_com%2Feducation-logo-design%2F&psig=AOvVaw3DRUSTnRsE3TcezepboDAZ&ust=1694977629011000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiy8u3pr4EDFQAAAAAdAAAAABAE" >
+    <title>Learn HTML</title>
+    <style>
+        body{
+            background-color: #05c4;
+            text-align: center;
+        }
+        form{
+            background-color: #ffffffaa;
+            max-width: 800px;
+            margin:50px auto;
+            padding :30px 20px;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+        }
+
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label{
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: block;
+            margin-bottom: 10px
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 1px solid #777;
+            border-radius: 2px;
+            padding :10px;
+            width:90%;
+            display: block;
+        }
+
+        .form-control input[type="radio"]{
+            display: inline-block;
+            width: auto;
+        }
+
+        button{
+            background-color:  #05c4;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <button style=" text-align:center;width: 80px;padding: 10px;border:1px solid #777">Click</button>
+    <span style="color:cadetblue;">
+        <h1 >Lets learn HTML</h1>
+    </span>
+    
+    <h2>We will start with making form</h2>
+    
+    <p style="font-size: 30px;">Welcome to our website, Please fill form</p>
+    
+    <form id="form" name="myform" onsubmit="return validate()">
+        <div class = "form-control">
+            <label for="name" id = "label-name" >Name</label>
+            <input type = "text" id="name" placeholder="Enter your name "required/>
+        </div>
+        
+        <div class = "form-control">
+            <label for="email" id="label-email">Password</label>
+            <input type="password" id="email" placeholder="Enter your password"required/>
+        </div>
+
+
+        <div class = "form-control">
+            <label for="email" id="label-email">Email id</label>
+            <input type="text" id="email" placeholder="Enter your mail"/>
+        </div>
+
+        <div class ="form-control">
+            <label for="age" id = "label-age">age</label>
+
+            <input type = "text" id ="age" placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role" >Which option best describe you</label>
+
+            <select name="role" id="role">
+                <option value="Student">Select</option>
+                <option value="Student">Student</option>
+                <option value="Student">Professor</option>
+                <option value="Student">intern</option>
+                <option value="Student">Engineer</option>
+                <option value="Student">Other</option>
+
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="other" id="other">If other, Please mention</label>
+            <input type="text" id="other" placeholder="Please specify">
+        </div>
+
+        <div class="form-control">
+            <label >Would you like to go for coffee ?</label>
+            <label for ="coffee" >
+                <input type="radio" id="coffee" name = "coffee"/>Yes
+            </label>
+            <label for ="coffee-2" >
+                <input type="radio" id="coffee-2" name = "coffee"/>No
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for = "comment">
+                Any Suggestion
+            </label>
+            <textarea name = "comment" id = "comment" placeholder="Enter here please">
+                
+            </textarea>
+        </div>
+
+        <div class="form-control">
+            <label for="image">Upload your image</label>
+            <input type="file" id="myFile" name="filename">
+
+        </div>
+        <button id='submit' type="submit" value="submit" >Submit</button>
+
+        <footer style="font-size: large; font-family: inherit">Wish you the luck,buddy</footer>
+    </form> 
+
+    <script src="/Form.js"></script>
+
+    
+</body>
+</html>
