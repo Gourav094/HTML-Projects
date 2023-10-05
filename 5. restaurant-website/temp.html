@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foood</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <div class="icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section">
+      <div class="container">
+        <div class="image">
+          <img src="./images/cover.png" alt="loading.." />
+        </div>
+        <div class="content">
+          <div class="tag">50% Discount on all products</div>
+          <h1>Welcome! Enjoy your yummmy foood</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, iusto
+            sequi. Quibusdam voluptatibus labore nam?
+          </p>
+          <button>Explore now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+//css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    z-index: 50;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.icon{
+    font-size: 27px;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
