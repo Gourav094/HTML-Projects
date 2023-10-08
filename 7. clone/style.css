@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    /* background-color: #1f1f1f; */
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+}
+
+aside{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.side-icons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside .bars{
+    margin-top: 20px;
+}
+
+.side-icons p{
+    font-size: 10px;
+    margin-top: -5px;
+}
+
+.side-content img{
+    width: 20px;
+}
+
+.main-content{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.center-content{
+    display: flex;
+}
+
+.center-content .search{
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+
+.center-content input{
+    padding: 10px 10px;
+    min-width: 500px;
+    border: 0.5px solid #ccc;
+}
+
+.center-content button{
+    border: none;
+    padding: 5px 15px;
+}
+
+.center-content button img{
+    height: 20px;
+}
+
+
+.center-content .mic{
+    background-color: rgb(240, 239, 239);
+    border-radius: 50%;
+    display: grid;
+    padding: 7px;
+    place-items: center;
+    margin-left: 15px;
+}
+.side-content{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.tags{
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #ccc;
+    padding: 10px 15px;
+}
+.tag{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.light{
+    background-color: #ccc;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+
+
+main{
+    min-height: 100vh;
+    background-color: #ccc;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+}
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+.card #video{
+    border-radius: 4px;
+}
+
+.content{
+    padding-top:10px ;
+    display: flex;
+    gap: 7px;
+}
+
+.view
+{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.card-text .channel{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.content h3{
+    font-size: 20px;
+}
