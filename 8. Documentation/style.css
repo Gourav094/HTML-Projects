@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    gap: 10px;
+}
+
+header{
+    border: 1px solid #ccc;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav h1{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+nav ul li{
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav li:hover{
+    background-color: #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+main{
+    padding: 40px;
+    
+}
+section{
+    margin-bottom: 50px;
+    scroll-margin: 50px;
+}
+
+main h1{
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+section article{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article{
+    max-width: 1200px;
+    font-size: 14px;
+}
+article ul{
+    margin-left: 30px;
+}
+article ul li{
+    margin-bottom: 10px;
+}
+article p{
+    line-height: 1.6;
+}
+
+code{
+    white-space: pre-line;
+    text-align: left;
+    line-height: 2; 
+    margin: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+}
